@@ -361,3 +361,17 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Library
+/ProjectSettings
+/Temp
+/UserSettings
+/.collabignore
+/.vsconfig
+/Assembly-CSharp.csproj
+/game_26_06_2022.sln
+/Assets/Scenes/Test
+/Assets/Prefabs/Input
+/Assets/Materials
+/Assets/lookatplayer.cs
+/Assets/PhysicsManager.preset
+/Assets/New Terrain.asset
