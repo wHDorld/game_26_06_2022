@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Features.Ship.Intefaces;
 
-namespace Features.Ship.Components
+namespace Features.Ship.Components.External
 {
     [AddComponentMenu("Features/Ship/Transform Cabin Rotatement")]
     public class TransformCabinRotatement : MonoBehaviour, ICabinRotatement

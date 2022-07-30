@@ -65,12 +65,16 @@ namespace Features.PInput.Components
         {
             if (axisValue < 0.5f) return false;
             if (isHoldingNow) return true;
+
             RaycastHit hit;
-            if (!Physics.Raycast(new Ray(Camera.position, Camera.forward), out hit, MaxDistance, LayerMask.GetMask("Interactable")))
+            if (!Physics.Raycast(new Ray(Camera.position, Camera.forward), out hit, MaxDistance))
                 return false;
+            if (hit.collider.gameObject.GetComponent<IInteractHandler>() == null) return false;
+
             holdingDistance = hit.distance;
             holdingHandler = hit.collider.gameObject.GetComponent<IInteractHandler>();
             isHoldingNow = IsHold;
+
             return true;
         }
         private Vector3 HoldingPoint()

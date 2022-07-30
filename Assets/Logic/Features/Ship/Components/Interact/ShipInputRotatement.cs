@@ -5,23 +5,29 @@ using UnityEngine;
 using Features.Unit.Entities;
 using Features.Unit.Components;
 using Features.Unit.Interfaces;
+using Features.Ship.Interfaces;
+using Features.Ship.Entities;
 
-namespace Features.Ship.Components
+namespace Features.Ship.Components.Interact
 {
     [RequireComponent(typeof(TransformValueClampedContainer))]
-    public class ShipInputRotatement : MonoBehaviour
+    public class ShipInputRotatement : MonoBehaviour, IShipConnect
     {
         public Vector2 ValueThreshold;
 
         IRotatement shipRotatement;
         ClampedValueE leaverX;
         ClampedValueE leaverY;
-        new Transform transform;
+        ShipIdentity shipIdentity;
+
+        public void Connect(ShipIdentity shipIdentity)
+        {
+            this.shipIdentity = shipIdentity;
+            shipRotatement = shipIdentity.gameObject.GetComponent<IRotatement>();
+        }
+
         void Start()
         {
-            GameObject ship = gameObject.transform.GetComponentsInParent<Transform>().FirstOrDefault(x => x.tag == "Ship").gameObject;
-            shipRotatement = ship.GetComponent<IRotatement>();
-            transform = ship.GetComponent<Transform>();
             leaverX = GetComponent<TransformValueClampedContainer>().GetValues().FirstOrDefault(x => x.Name == "rot X");
             leaverY = GetComponent<TransformValueClampedContainer>().GetValues().FirstOrDefault(x => x.Name == "rot Y");
         }
@@ -32,9 +38,9 @@ namespace Features.Ship.Components
             float valY = leaverY.value - 0.5f;
             if (valX > ValueThreshold.x && valX < ValueThreshold.y ||
                 valY > ValueThreshold.x && valY < ValueThreshold.y)
-                shipRotatement.Stop();
+                shipRotatement?.Stop();
             else
-                shipRotatement.AddRotation(new Vector3(valX, 0, valY));
+                shipRotatement?.AddRotation(new Vector3(valX, 0, valY));
         }
     }
 }
