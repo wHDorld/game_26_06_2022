@@ -24,7 +24,6 @@ namespace Features.Ship.Components.Interact
         public void Connect(ShipIdentity shipIdentity)
         {
             this.shipIdentity = shipIdentity;
-            Debug.Log(shipIdentity.gameObject.name);
             shipMovement = shipIdentity.gameObject.GetComponent<IMovement>();
         }
 
