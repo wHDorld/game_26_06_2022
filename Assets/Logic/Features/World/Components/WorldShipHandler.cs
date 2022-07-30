@@ -13,6 +13,7 @@ using Features.Ship.Entities;
 
 namespace Features.World.Components
 {
+    [AddComponentMenu("Features/World/World Ship Handler")]
     [RequireComponent(typeof(WorldSceneHandler))]
     public class WorldShipHandler : MonoBehaviour
     {
@@ -74,8 +75,8 @@ namespace Features.World.Components
             GameObject externalGO = WorldService.GetExternalShipGOByName(name, identity);
             GameObject internalGO = WorldService.GetInternalShipGOByName(name, identity);
 
-            externalGO.transform.SetParent(WorldService.GetExternalSceneRoot.transform);
-            internalGO.transform.SetParent(WorldService.GetInternalSceneRoot.transform);
+            SceneManager.MoveGameObjectToScene(externalGO, WorldContainer.ExternalScene);
+            SceneManager.MoveGameObjectToScene(internalGO, WorldContainer.InternalScene);
 
             WorldService.ProvideShipConnection(externalGO);
             WorldService.ProvideShipConnection(internalGO);

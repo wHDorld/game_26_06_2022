@@ -18,8 +18,6 @@ namespace Features.World.Components
         public static string ExternalPath = "Prefabs/Ships/External/";
         public static string InternalPath = "Prefabs/Ships/Internal/";
 
-        public static string SceneRoot = "ROOT";
-
         public static Scene ExternalScene;
         public static Scene InternalScene;
     }

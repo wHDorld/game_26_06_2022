@@ -38,16 +38,6 @@ namespace Features.World.Components
         public static string GetInternalPathByName(string name) =>
             WorldContainer.InternalPath + name + WorldContainer.InternalTag;
 
-        public static GameObject GetExternalSceneRoot =>
-            WorldContainer.ExternalScene.GetRootGameObjects()
-                     .Where(x => x.name == WorldContainer.SceneRoot)
-                     .FirstOrDefault();
-
-        public static GameObject GetInternalSceneRoot =>
-            WorldContainer.InternalScene.GetRootGameObjects()
-                     .Where(x => x.name == WorldContainer.SceneRoot)
-                     .FirstOrDefault();
-
         public static void ProvideShipConnection(GameObject ship, ShipIdentityObject identity)
         {
             ShipIdentity shipIdentity = null;

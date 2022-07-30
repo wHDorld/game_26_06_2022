@@ -10,6 +10,7 @@ using Features.Ship.Entities;
 
 namespace Features.Ship.Components.Interact
 {
+    [AddComponentMenu("Features/Ship/Interact/Ship Input Movement")]
     [RequireComponent(typeof(TransformValueClampedContainer))]
     public class ShipInputMovement : MonoBehaviour, IShipConnect
     {
@@ -23,6 +24,7 @@ namespace Features.Ship.Components.Interact
         public void Connect(ShipIdentity shipIdentity)
         {
             this.shipIdentity = shipIdentity;
+            Debug.Log(shipIdentity.gameObject.name);
             shipMovement = shipIdentity.gameObject.GetComponent<IMovement>();
         }
 

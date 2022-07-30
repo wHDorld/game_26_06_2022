@@ -10,6 +10,7 @@ using Features.Ship.Entities;
 
 namespace Features.Ship.Components.Interact
 {
+    [AddComponentMenu("Features/Ship/Interact/Ship Input Rotatement")]
     [RequireComponent(typeof(TransformValueClampedContainer))]
     public class ShipInputRotatement : MonoBehaviour, IShipConnect
     {
