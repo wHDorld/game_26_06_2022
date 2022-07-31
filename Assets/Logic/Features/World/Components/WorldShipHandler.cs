@@ -66,6 +66,8 @@ namespace Features.World.Components
                 inst.InternalShip.GetComponentsInChildren<Transform>()
                 .Where(x => x.name == "PlayerSpawnPoint")
                 .FirstOrDefault().position;
+
+            WorldService.ProvideShipConnection(inst.InternalShip);
         }
 
         public static ShipConnect InstantiateShip(string name)
