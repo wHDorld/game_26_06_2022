@@ -67,7 +67,7 @@ namespace Features.PInput.Components
             if (isHoldingNow) return true;
 
             RaycastHit hit;
-            if (!Physics.Raycast(new Ray(Camera.position, Camera.forward), out hit, MaxDistance))
+            if (!Physics.Raycast(new Ray(Camera.position, Camera.forward), out hit, MaxDistance, LayerMask.GetMask("Internal")))
                 return false;
             if (hit.collider.gameObject.GetComponent<IInteractHandler>() == null) return false;
 
