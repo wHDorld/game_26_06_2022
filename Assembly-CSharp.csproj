@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2020_2_6;UNITY_2020_2;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_2_6;UNITY_2020_2;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -49,7 +49,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.5</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.2.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -64,16 +64,22 @@
     <Compile Include="Assets\Logic\Features\Unit\Components\TransformValueClampedContainer.cs" />
     <Compile Include="Assets\Logic\Features\PInput\Components\InputMovement.cs" />
     <Compile Include="Assets\Logic\Features\Ship\Interfaces\ICabinRotatement.cs" />
+    <Compile Include="Assets\Logic\Features\Ship\Components\InheritConnections\InheritCamera.cs" />
     <Compile Include="Assets\Logic\Features\Ship\Components\External\TransformCabinRotatement.cs" />
     <Compile Include="Assets\Logic\Features\Interact\Components\InteractHandler.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\UnitStateContainer.cs" />
     <Compile Include="Assets\Logic\Features\Interact\Components\InteractToRotate.cs" />
+    <Compile Include="Assets\Logic\Features\Ship\Entities\ShipIdentityObject.cs" />
     <Compile Include="Assets\Logic\Features\MapGenerator\Entities\AreaInformation.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\CharacterControllerGravityApplayer.cs" />
+    <Compile Include="Assets\Logic\Features\Ship\Components\ShipIdentity.cs" />
     <Compile Include="Assets\Logic\Features\MapGenerator\Entities\MapSettings.cs" />
+    <Compile Include="Assets\Logic\Features\Ship\Components\InheritConnections\InheritTransform.cs" />
+    <Compile Include="Assets\Logic\Features\Ship\Enums\ShipType.cs" />
     <Compile Include="Assets\Logic\Features\Ship\Components\Interact\ShipInputMovement.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\TransformRotatement.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Interfaces\IValueClampedContainer.cs" />
+    <Compile Include="Assets\Logic\Features\World\Components\WorldContainer.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Enums\RaycastType.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Interfaces\IRotatement.cs" />
     <Compile Include="Assets\Logic\Features\PInput\Components\InputJumpable.cs" />
@@ -82,14 +88,21 @@
     <Compile Include="Assets\Logic\Features\Unit\Entities\ClampedValueE.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\RigidbodyRotatement.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Abstract\AStateContainer.cs" />
+    <Compile Include="Assets\Logic\Features\World\Components\WorldSceneHandler.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\TransformGravityApplayer.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Interfaces\IMovement.cs" />
+    <Compile Include="Assets\Logic\Features\World\Components\WorldShipHandler.cs" />
     <Compile Include="Assets\Logic\Features\PInput\Components\GlobalInputContainer.cs" />
     <Compile Include="Assets\Logic\Features\MapGenerator\Components\DEMO_MapGeneration.cs" />
+    <Compile Include="Assets\Logic\Data\ScriptableObjects\Entities\PlayerSaveDataContainer.cs" />
+    <Compile Include="Assets\Logic\Features\World\Entities\ShipConnect.cs" />
     <Compile Include="Assets\Logic\Features\MapGenerator\Methods\SAreaTypeGenerator.cs" />
+    <Compile Include="Assets\Logic\Features\World\Components\WorldService.cs" />
     <Compile Include="Assets\Logic\Features\MapGenerator\Entities\AreaContainer.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\RigidbodyMovement.cs" />
+    <Compile Include="Assets\Logic\Data\ScriptableObjects\PlayerSaveData.cs" />
     <Compile Include="Assets\Logic\Features\Interact\Entities\InteractMessage.cs" />
+    <Compile Include="Assets\Logic\Features\Ship\Interfaces\IShipConnect.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\RigidbodyTransformMovement.cs" />
     <Compile Include="Assets\Logic\Features\MapGenerator\Enums\EAreaGenerationShape.cs" />
     <Compile Include="Assets\Logic\Features\PInput\Components\InputRotatement.cs" />
@@ -101,19 +114,6 @@
     <Compile Include="Assets\Logic\Features\Unit\Components\TransformFreeRotatement.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\TransformMovement.cs" />
     <Compile Include="Assets\Logic\Features\PInput\Interfaces\IInputable.cs" />
-    <Compile Include="Assets\Logic\Features\Ship\Components\ShipIdentity.cs" />
-    <Compile Include="Assets\Logic\Features\World\Components\WorldShipHandler.cs" />
-    <Compile Include="Assets\Logic\Features\World\Entities\ShipConnect.cs" />
-    <Compile Include="Assets\Logic\Features\World\Components\WorldSceneHandler.cs" />
-    <Compile Include="Assets\Logic\Data\ScriptableObjects\PlayerSaveData.cs" />
-    <Compile Include="Assets\Logic\Data\ScriptableObjects\Entities\PlayerSaveDataContainer.cs" />
-    <Compile Include="Assets\Logic\Features\Ship\Entities\ShipIdentityObject.cs" />
-    <Compile Include="Assets\Logic\Features\Ship\Interfaces\IShipConnect.cs" />
-    <Compile Include="Assets\Logic\Features\World\Components\WorldContainer.cs" />
-    <Compile Include="Assets\Logic\Features\Ship\Enums\ShipType.cs" />
-    <Compile Include="Assets\Logic\Features\World\Components\WorldService.cs" />
-    <Compile Include="Assets\Logic\Features\Ship\Components\InheritConnections\InheritTransform.cs" />
-    <Compile Include="Assets\Logic\Features\Ship\Components\InheritConnections\InheritCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
