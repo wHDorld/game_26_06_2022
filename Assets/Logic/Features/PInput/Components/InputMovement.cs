@@ -8,6 +8,7 @@ using Features.Unit.Components;
 using Features.Unit.Interfaces;
 using Features.Unit.Abstract;
 using Features.PInput.Interfaces;
+using Features.Ship.Components.Internal;
 
 namespace Features.PInput.Components
 {
@@ -17,6 +18,7 @@ namespace Features.PInput.Components
     {
         public string HorizontalAxis = "Horizontal";
         public string VerticalAxis = "Vertical";
+        public string SecondInputAxis = "E";
 
         new Transform transform;
         IMovement movement;
@@ -32,12 +34,34 @@ namespace Features.PInput.Components
         private void FixedUpdate()
         {
             movement.Move(inputDir);
+
+        }
+        private void Update()
+        {
+            if (GlobalInputContainer.GetAxis(SecondInputAxis) > 0.5f)
+            {
+                FindPilotSeat();
+            }
+        }
+
+        void FindPilotSeat()
+        {
+            Debug.Log("findpilotseat");
+            var pilotSeat = FindObjectsOfType<PilotSeat>()?
+                .Where(x => Vector3.Distance(x.transform.position, transform.position) < 3)
+                .FirstOrDefault();
+
+            if (pilotSeat == null)
+                return;
+
+            movement = pilotSeat.Switch(movement, "player");
         }
 
         public void CacheInputFields()
         {
             GlobalInputContainer.CacheAxis(HorizontalAxis);
             GlobalInputContainer.CacheAxis(VerticalAxis);
+            GlobalInputContainer.CacheAxis(SecondInputAxis, true);
         }
 
         Vector3 inputDir

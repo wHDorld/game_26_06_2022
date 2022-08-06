@@ -73,8 +73,8 @@
     <Compile Include="Assets\Logic\Features\MapGenerator\Entities\AreaInformation.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\CharacterControllerGravityApplayer.cs" />
     <Compile Include="Assets\Logic\Features\Ship\Components\ShipIdentity.cs" />
-    <Compile Include="Assets\Logic\Features\MapGenerator\Entities\MapSettings.cs" />
     <Compile Include="Assets\Logic\Features\Ship\Components\InheritConnections\InheritTransform.cs" />
+    <Compile Include="Assets\Logic\Features\MapGenerator\Entities\MapSettings.cs" />
     <Compile Include="Assets\Logic\Features\Ship\Enums\ShipType.cs" />
     <Compile Include="Assets\Logic\Features\Ship\Components\Interact\ShipInputMovement.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\TransformRotatement.cs" />
@@ -90,6 +90,7 @@
     <Compile Include="Assets\Logic\Features\Unit\Abstract\AStateContainer.cs" />
     <Compile Include="Assets\Logic\Features\World\Components\WorldSceneHandler.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\TransformGravityApplayer.cs" />
+    <Compile Include="Assets\Logic\Features\Unit\Interfaces\ISwitchControllers.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Interfaces\IMovement.cs" />
     <Compile Include="Assets\Logic\Features\World\Components\WorldShipHandler.cs" />
     <Compile Include="Assets\Logic\Features\PInput\Components\GlobalInputContainer.cs" />
@@ -99,12 +100,14 @@
     <Compile Include="Assets\Logic\Features\MapGenerator\Methods\SAreaTypeGenerator.cs" />
     <Compile Include="Assets\Logic\Features\World\Components\WorldService.cs" />
     <Compile Include="Assets\Logic\Features\MapGenerator\Entities\AreaContainer.cs" />
+    <Compile Include="Assets\Logic\Features\Unit\Interfaces\ISwitchable.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\RigidbodyMovement.cs" />
     <Compile Include="Assets\Logic\Data\ScriptableObjects\PlayerSaveData.cs" />
     <Compile Include="Assets\Logic\Features\Interact\Entities\InteractMessage.cs" />
     <Compile Include="Assets\Logic\Features\Ship\Interfaces\IShipConnect.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\RigidbodyTransformMovement.cs" />
     <Compile Include="Assets\Logic\Features\MapGenerator\Enums\EAreaGenerationShape.cs" />
+    <Compile Include="Assets\Logic\Features\Ship\Components\Internal\PilotSeat.cs" />
     <Compile Include="Assets\Logic\Features\PInput\Components\InputRotatement.cs" />
     <Compile Include="Assets\Logic\Features\PInput\Entities\InputCacheE.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\RigidbodyTransformRotatement.cs" />
@@ -114,6 +117,7 @@
     <Compile Include="Assets\Logic\Features\Unit\Components\TransformFreeRotatement.cs" />
     <Compile Include="Assets\Logic\Features\Unit\Components\TransformMovement.cs" />
     <Compile Include="Assets\Logic\Features\PInput\Interfaces\IInputable.cs" />
+    <Compile Include="Assets\Logic\Features\Ship\Components\Interact\Interfaces\IShipInput.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

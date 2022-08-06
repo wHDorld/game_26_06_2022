@@ -26,19 +26,19 @@ namespace Features.PInput.Components
         private void Update()
         {
             foreach (var a in InputCache)
-                a.value = Input.GetAxisRaw(a.field);
+                    a.SetValue(Input.GetAxisRaw(a.field));
         }
 
-        public static void CacheAxis(string field)
+        public static void CacheAxis(string field, bool oncePressable = false)
         {
             if (InputCache.Any(x => x.field == field))
                 return;
-            InputCache.Add(new InputCacheE(field, 0));
+            InputCache.Add(new InputCacheE(field, 0, oncePressable));
         }
 
         public static float GetAxis(string field)
         {
-            return InputCache.FirstOrDefault(x => x.field == field).value;
+            return InputCache.FirstOrDefault(x => x.field == field).GetValue();
         }
     }
 }

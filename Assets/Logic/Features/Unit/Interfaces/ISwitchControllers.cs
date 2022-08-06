@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UnityEngine;
 
 namespace Features.Unit.Interfaces
 {
-    public interface IMovement : ISwitchable
+    public interface ISwitchControllers<T> where T: ISwitchable
     {
-        public void Move(Vector3 dir);
-        public void Stop();
+        public T Switch(T controller, string key);
+        public T Release();
     }
 }

@@ -14,6 +14,8 @@ namespace Features.Unit.Entities
         public float value;
         public float minValue;
         public float maxValue;
+        public float Range;
+        public float Middle;
 
         public ClampedValueE(float minValue, float maxValue, string name)
         {
@@ -21,6 +23,8 @@ namespace Features.Unit.Entities
             this.minValue = minValue;
             this.maxValue = maxValue;
             this.Name = name;
+            this.Range = maxValue - minValue;
+            this.Middle = (maxValue + minValue) / 2f;
         }
         public ClampedValueE(Vector2 values, string name)
         {
@@ -28,15 +32,10 @@ namespace Features.Unit.Entities
             this.minValue = values.x;
             this.maxValue = values.y;
             this.Name = name;
+            this.Range = maxValue - minValue;
+            this.Middle = (maxValue + minValue) / 2f;
         }
 
-        public float Range
-        {
-            get
-            {
-                return maxValue - minValue;
-            }
-        }
         public void ConvertRawToValue(float raw)
         {
             value = (raw - minValue) / Range;

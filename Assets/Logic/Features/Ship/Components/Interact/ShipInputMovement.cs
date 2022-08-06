@@ -7,12 +7,13 @@ using Features.Unit.Components;
 using Features.Unit.Interfaces;
 using Features.Ship.Interfaces;
 using Features.Ship.Entities;
+using Features.Ship.Components.Interact.Interfaces;
 
 namespace Features.Ship.Components.Interact
 {
     [AddComponentMenu("Features/Ship/Interact/Ship Input Movement")]
     [RequireComponent(typeof(TransformValueClampedContainer))]
-    public class ShipInputMovement : MonoBehaviour, IShipConnect
+    public class ShipInputMovement : MonoBehaviour, IShipConnect, IShipInput
     {
         public Vector3 Forward = new Vector3(0, 0, 1);
         public Vector2 ValueThreshold;
@@ -20,6 +21,7 @@ namespace Features.Ship.Components.Interact
         IMovement shipMovement;
         ClampedValueE leaver;
         ShipIdentity shipIdentity;
+        new Transform transform;
 
         public void Connect(ShipIdentity shipIdentity)
         {
@@ -29,6 +31,7 @@ namespace Features.Ship.Components.Interact
 
         void Start()
         {
+            transform = gameObject.transform;
             leaver = GetComponent<TransformValueClampedContainer>().GetValues().FirstOrDefault(x => x.Name == "rot X");
         }
 
@@ -39,6 +42,16 @@ namespace Features.Ship.Components.Interact
                 shipMovement?.Stop();
             else
                 shipMovement?.Move(Forward * (leaver.value - 0.5f));
+        }
+
+        public List<ClampedValueE> GetClampedValue()
+        {
+            return new List<ClampedValueE>() { leaver };
+        }
+
+        public Transform GetInputObject()
+        {
+            return transform;
         }
     }
 }

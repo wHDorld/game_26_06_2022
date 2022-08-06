@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Features.Unit.Interfaces
 {
-    public interface IRotatement
+    public interface IRotatement : ISwitchable
     {
         public void AddRotation(Vector3 euler);
         public void RotateTowards(Vector3 dir);
