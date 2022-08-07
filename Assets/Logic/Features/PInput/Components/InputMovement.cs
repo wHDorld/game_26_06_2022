@@ -46,7 +46,6 @@ namespace Features.PInput.Components
 
         void FindPilotSeat()
         {
-            Debug.Log("findpilotseat");
             var pilotSeat = FindObjectsOfType<PilotSeat>()?
                 .Where(x => Vector3.Distance(x.transform.position, transform.position) < 3)
                 .FirstOrDefault();

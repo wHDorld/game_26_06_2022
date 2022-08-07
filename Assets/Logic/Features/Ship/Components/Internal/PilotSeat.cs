@@ -15,14 +15,18 @@ namespace Features.Ship.Components.Internal
 {
     public class PilotSeat : MonoBehaviour, IMovement, ISwitchControllers<IMovement>
     {
-        public IShipInput ShipInputMovement;
-        public IShipInput ShipInputRotatement;
+        public GameObject ShipInputMovementGameObject;
+        public GameObject ShipInputRotatementGameObject;
+
+        private IShipInput ShipInputMovement;
+        private IShipInput ShipInputRotatement;
+
+        //Поинтеры для установки локальных пространств для перерасчета направления движения в глобальные координаты относительно рычагов
+        public Transform ShipInputMovementPointer;
+        public Transform ShipInputRotatementPointer;
 
         private IInteractHandler ShipInputMovementInteract;
         private IInteractHandler ShipInputRotatementInteract;
-
-        private List<ClampedValueE> ShipInputMovementClamps;
-        private List<ClampedValueE> ShipInputRotatementClamps;
 
         private Transform ShipInputMovementTransform;
         private Transform ShipInputRotatementTransform;
@@ -33,8 +37,8 @@ namespace Features.Ship.Components.Internal
 
         private void Start()
         {
-            ShipInputMovementClamps = ShipInputMovement.GetClampedValue();
-            ShipInputRotatementClamps = ShipInputRotatement.GetClampedValue();
+            ShipInputMovement = ShipInputMovementGameObject.GetComponent<IShipInput>();
+            ShipInputRotatement = ShipInputRotatementGameObject.GetComponent<IShipInput>();
 
             ShipInputMovementTransform = ShipInputMovement.GetInputObject();
             ShipInputRotatementTransform = ShipInputRotatement.GetInputObject();
@@ -45,7 +49,15 @@ namespace Features.Ship.Components.Internal
 
         public void Move(Vector3 dir)
         {
+            Vector3 pos = ShipInputRotatementPointer.position + ShipInputRotatementPointer.TransformDirection(dir) * 2f;
+            InteractMessage message = new InteractMessage(
+                gameObject,
+                "",
+                1,
+                new List<float>() { pos.x, pos.y, pos.z }
+                );
 
+            ShipInputRotatementInteract.Interact(message);
         }
 
         public void Stop()
